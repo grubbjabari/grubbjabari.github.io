@@ -498,7 +498,6 @@ body.dark-theme {
     margin-bottom: 4.5rem;
 }
 
-/*
 .projects_container .swiper-pagination-bullets{
     bottom:0;
 }
@@ -510,4 +509,129 @@ body.dark-theme {
 
 .projects_container .swiper-pagination-bullet-active{
     background-color: var(--title-color);
-}*/
+}
+
+/* Contact */
+.contact_container{
+    row-gap: 3.5rem;
+}
+
+.contact_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 2.5rem;
+}
+
+.contact_title i{
+    font-size: 1rem;
+    font-weight: initial;
+}
+
+.contact_info,
+.contact_data,
+.contact_form{
+    display:grid;
+}
+
+.contact_info{
+    row-gap: 2rem;
+}
+
+.contact_data{
+    row-gap: .75rem;
+}
+
+.contact_data-title{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.contact_data-info{
+    font-size: var(--small-font-size);
+    font-family: var(--title-font);
+    color:var(--title-color);
+}
+
+.contact_button{
+    width: max-content;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+}
+
+.contact_button i{
+    font-size: 1rem;
+    transition: transform .3s;
+}
+
+.contact_button:hover i{
+    transform: translateX(.25rem);
+}
+
+.contact_form{
+    position: relative;
+    row-gap: 2rem;
+}
+
+.contact_form-div{
+    position: relative;
+    height: 4rem;
+}
+
+.contact_form-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--text-color-light);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    font-size: var(--normal-font-size);
+    font-family: var(--title-font);
+    color: var(--title-color);
+    background: none;
+    outline: none;
+    z-index: 1;
+}
+
+.contact_form-tag{
+    position: absolute;
+    top: -.75rem;
+    left: 1.25rem;
+    z-index: 10;
+    background-color: var(--body-color);
+    color: var(--title-color);
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    padding: .35rem;
+}
+
+.contact_form-area{
+    height: 10rem;
+}
+
+.contact_form-area textarea{
+    resize: none;
+}
+
+.contact_form .contact_button{
+    border:none;
+    background: none;
+    font-size: var(--h2-font-size);
+    font-family: var(--title-font);
+    font-weight: var(--font-semi-bold);
+    cursor: pointer;
+    margin-top: .75rem;
+}
+
+.contact_form .contact_button i{
+    font-size: 1.5rem;
+    font-weight: initial;
+}
