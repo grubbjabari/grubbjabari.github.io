@@ -19,7 +19,7 @@
     /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
     --gradient-color: linear-gradient(180deg,
                         hsla(207, 48%, 72%, 0),
-                        hsla(207, 65%, 65%, 1));
+                        #ee5fca);
 
   /*font typography*/
     --body-font : 'Roboto', sans-serif;
@@ -234,4 +234,111 @@ body.dark-theme {
 /* Show menu */
 .show-menu{
     bottom: 2rem;  
+}
+
+/* Home */
+.home_container{
+    row-gap: 4rem;
+    padding-top: 2rem;
+}
+
+.home_data{
+    row-gap: 1.5rem;
+}
+
+.home_title{
+    text-align: center;
+    font-size: var(--biggest-font-size);
+    letter-spacing: .3px;
+    margin-bottom: .5px;
+}
+
+.home_blob{
+    position: relative;
+    width: 200px;
+    height: 290px;
+    background-color: var(--body-color);
+    justify-self: center;
+    border-radius: 6.25rem;
+    place-items: center;
+}
+
+.home_profile{
+    width: 170px;
+    height: 260px;
+    background: var(--gradient-color);
+    border-radius: 5.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.home_profile img{
+    width: 150px;
+}
+
+.home_shape-waves,
+.home_shape-circle{
+    position: absolute;
+    opacity: .1;
+}
+
+
+.home__shape-waves{
+    width: 50px;
+    left: -1.5rem;
+    top: 5rem;
+}
+
+.home_shape-circle{
+    width: 150px;
+    bottom: -2rem;
+    right: -3rem;
+    transform: rotate(15deg);
+    z-index: -1;
+}
+
+.home_social{
+    justify-self: center;
+    display: flex;
+    column-gap: 1.25rem;
+}
+
+.home_social-link{
+    font-size: 1.25rem;
+    color: var(--text-color-light);
+    transition: color .3s;
+}
+
+.home_social-link:hover{
+    color: var(--title-color);
+}
+
+.home_info{
+  display: grid;
+  row-gap: 2rem;  
+}
+
+.home_info-title{
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+    font-weight: 400;
+    color: var(--text-color-light);
+    margin-bottom: 1rem;
+}
+
+.home_info-description,
+.home_info-number{
+    font-family: var(--title-font);
+    color: var(--title-color);
+}
+
+.home_info-description{
+    padding-right: 4rem;
+}
+
+.home_info-number{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
 }
