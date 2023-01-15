@@ -48,23 +48,23 @@ let swiperProjects = new Swiper(".projects_container", {
 
 /* email */
 
-const contactForm = document.getElementsById('contact-form'),
-    contactName = document.getElementsById('contact-name'),
-    contactEmail = document.getElementsById('contact-email'),
-    contactProject = document.getElementsById('contact-project'),
-    contactMessage = document.getElementsById('contact-message');
+const contactForm = document.getElementById('contact-form'),
+    contactName = document.getElementById('contact-name'),
+    contactEmail = document.getElementById('contact-email'),
+    contactProject = document.getElementById('contact-project'),
+    contactMessage = document.getElementById('contact-message');
 
 const sendEmail = (e) =>{
-    e00.preventDefault()
+    e.preventDefault()
 
     //Checks if field has a value
     if(contactName.value === '' || contactEmail.value === '' || contactProject.value === ''){
         //Add and remove color
         contactMessage.classList.remove('color-blue')
-        contactMessage.classList.add('color-red');
+        contactMessage.classList.add('color-red')
 
         //Show message
-        contactMessage.textContent = 'Write all the input fields!';
+        contactMessage.textContent = 'Write all the input fields!'
     } else {
         // ServiceID - templateID - #form - publicKey
         emailjs.sendForm('service_ji2vq9q', 'template_b4qko2s', '#contact-form','CQmLzhhvxyhzMoVBH')
