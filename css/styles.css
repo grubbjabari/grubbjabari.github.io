@@ -236,6 +236,11 @@ body.dark-theme {
     bottom: 2rem;  
 }
 
+/* Active Link */
+
+.active-link{
+    color:var(--title-color)0;
+}
 /* Home */
 .home_container{
     row-gap: 4rem;
