@@ -12,14 +12,11 @@
     --title-color: hsl(207, 4%, 16%);
     --text-color: hsl(207, 4%, 28%);
     --text-color-light: hsl(207, 4%, 56%);
-    --body-color: RGB(250,217,218);
+    --body-color: #dcd0ff;
     --container-color: hsl(207, 4%, 95%);
 
-    /* Change the first number */
-    /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
-    --gradient-color: linear-gradient(180deg,
-                        hsla(207, 48%, 72%, 0),
-                        #ee5fca);
+    /* Color for shape */
+    --gradient-color: linear-gradient(180deg, #84c686 , #d6e19e);
 
   /*font typography*/
     --body-font : 'Roboto', sans-serif;
@@ -112,8 +109,9 @@ img {
 body.dark-theme {
     --title-color: hsl(207, 4%, 95%);
     --text-color: hsl(207, 4%, 65%);
-    --body-color: hsl(207, 4%, 10%);
+    --body-color: #340f3e;
     --container-color: hsl(207, 4%, 12%);
+    --gradient-color: linear-gradient(180deg, #e973a7, #f6a432);
 }
 
 /* Light theme changes */
