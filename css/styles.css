@@ -169,7 +169,7 @@ body.dark-theme {
 .section_title{
     font-size: var(--h1-font-sie);
     font-weight: var(--font-semi-bold);
-    margin-bottom: .25rem;
+    margin-bottom: 2.5rem;
 }
 
 .section_subtitle{
