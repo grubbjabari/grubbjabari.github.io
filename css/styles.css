@@ -169,7 +169,7 @@ body.dark-theme {
 .section_title{
     font-size: var(--h1-font-sie);
     font-weight: var(--font-semi-bold);
-    margin-bottom: 2.5rem;
+    margin-bottom: .5rem;
 }
 
 .section_subtitle{
@@ -465,12 +465,13 @@ body.dark-theme {
 }
 
 .certifications_data{
+    place-items: center;
     justify-content: center;
     text-align: center;
 }
 
 .certifications_blob{
-    width: 80px;
+    width: 100px;
     height: 100px;
     background-color: var(--container-color);
     border-radius: 3rem;
@@ -479,7 +480,7 @@ body.dark-theme {
 }
 
 .certifications_blob img{
-    width: 40px;
+    width: 50px;
 }
 
 .certifications_name{
