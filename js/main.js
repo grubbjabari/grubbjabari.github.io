@@ -172,3 +172,38 @@ sr.reveal('.home_info div', {delay: 600, origin: 'bottom', intval: 100})
 sr.reveal('.skills_content:nth-child(1), .contact_content:nth-child(1)', {origin: 'left'})
 sr.reveal('.skills_content:nth-child(2), .contact_content:nth-child(2)', {origin: 'right'})
 sr.reveal('.skills_content:nth-child(1)', {origin: 'left'})
+
+
+
+/* Search Functionality*/
+
+const searchInput = document.getElementById('search_input');
+const searchButton = document.getElementById('search_button');
+const searchResults = document.getElementById('search_results');
+
+/* Event Listener*/
+searchButton.addEventListener('click', performSearch);
+
+function performSearch(){
+
+    const query = searchInput.value;
+    searchResults.innerHTML = ''; /*Clearing previous results*/
+    const results = performSearchLogic(query);
+    displayResults(results);
+}
+
+function performSearchLogic(query){
+    return [
+        'Temp Result 1',
+        'Temp Result 2',
+        'Temp Result 3'
+    ];
+}
+
+function displayResults(results) {
+    results.forEach(result => {
+        const listIte= document.reateElement('li');
+        listItem.textContent = result;
+        searchResults.appendChild(listItem);
+    })
+}
