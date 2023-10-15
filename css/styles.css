@@ -183,6 +183,36 @@ body.dark-theme {
     overflow: hidden; /* For animations */
 }
 
+.details-container{
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 /* header and nav */
 .header{
     width: 100%;
@@ -438,7 +468,7 @@ body.dark-theme {
     row-gap: 3.5rem;
 }
 
-.certifications_title{
+.cert-title{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -448,7 +478,7 @@ body.dark-theme {
     margin-bottom: 2.5rem;
 }
 
-.certifications_title i{
+.cert-title i{
     font-size: 1rem;
     font-weight: initial;
 }
@@ -471,8 +501,8 @@ body.dark-theme {
 }
 
 .certifications_blob{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: var(--container-color);
     border-radius: 3rem;
     place-items: center;
@@ -480,7 +510,7 @@ body.dark-theme {
 }
 
 .certifications_blob img{
-    width: 50px;
+    width: 100px;
 }
 
 .certifications_name{
@@ -488,7 +518,7 @@ body.dark-theme {
     margin-bottom: .25rem;
 }
 
-.certifications_subtitle{
+.cert-subtitle{
     font-size: var(--tiny-font-size);
     color: var(--text-color-light);
 }
@@ -960,7 +990,7 @@ body.dark-theme {
     .skills_container,
     .certifications_container,
     .contac_container{
-        grid-template-columns: repeat(2, max-content);
+        grid-template-columns: auto auto;
     }
 
     .skills_container,
